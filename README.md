@@ -1,7 +1,7 @@
 # Arch dotfiles
 This is my dotfile repository. I have done my best to make sure the script will work under most Linux distros regardless of configuration.
 
-- Scripts are located in `~/.bin`
+- Scripts are located in `/.bin`
 This repo contains dotfiles for:
   - vim
   - i3-gaps
