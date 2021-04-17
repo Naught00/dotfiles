@@ -1,2 +1,32 @@
-# dotfiles
-My dotfiles for i3, rofi, vim, latexmk, vim and termite.
+# Arch dotfiles
+This is my dotfile repository. I have done my best to make sure the script will work under most Linux distros regardless of configuration.
+
+- Scripts are located in `~/.bin`
+This repo contains dotfiles for:
+  - vim
+  - i3-gaps
+  - rofi
+  - termite
+  - latexmk
+  - bash
+  - i3status
+## Installaion
+Clone the dotfiles repository in your directory of choce. This example uses ~/git.
+```
+$ cd ~
+$ mkdir git && cd git
+$ git clone https://github.com/Naught00/dotfiles.git
+$ cd dotfiles
+```
+Run the install script to place the files in their correct directory. 
+```
+./install.sh
+Usage: install.sh [options]
+  -i, --install       Install all config files
+  -v, --vim           Install config for vim
+  --i3-gaps           Install config for i3-gaps
+  -t, --termite       Install config for termite
+  -r, --rofi           Install config for rofi
+  --i3status          Install config for i3-status
+  -l, --latexmk       Install config files for latexmk
+ 
