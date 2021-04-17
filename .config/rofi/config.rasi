@@ -1,0 +1,4 @@
+configuration {
+ modi: "run,drun";
+ theme: "Pop-Dark";
+}
