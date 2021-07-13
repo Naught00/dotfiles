@@ -1,1 +1,1 @@
-#!~/.bin/install
+#!/bin/bash
