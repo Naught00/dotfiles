@@ -1,0 +1,2 @@
+#!/bin/bash
+vim ~/diary/$(date +%F_%H:%M)
