@@ -1,0 +1,12 @@
+#!/bin/bash
+# A script that makes a new post to my website.
+cd ~/projects/quickstart/
+hugo new posts/$1.md
+vim ~/projects/quickstart/content/posts/$1.md
+hugo -D
+cd public
+rm -rf about
+rm -rf contact
+rm -rf projects
+sudo cp -r * /home/http/
+
