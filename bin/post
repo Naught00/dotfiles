@@ -1,6 +1,7 @@
 #!/bin/bash
 # A script that makes a new post to my website.
-# Takes a command line argument in the form of the post title.
+# Takes a command line argument in the form of a post title.
+# For example "post 'New Post'."
 cd ~/projects/quickstart/
 hugo new posts/$1.md
 vim ~/projects/quickstart/content/posts/$1.md
@@ -9,5 +10,5 @@ cd public
 rm -rf about
 rm -rf contact
 rm -rf projects
-sudo cp -r * /home/http/
+scp -r * root@marknaughton.com:/srv/http
 
