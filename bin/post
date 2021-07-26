@@ -1,5 +1,6 @@
 #!/bin/bash
 # A script that makes a new post to my website.
+# Takes a command line argument in the form of the post title.
 cd ~/projects/quickstart/
 hugo new posts/$1.md
 vim ~/projects/quickstart/content/posts/$1.md
