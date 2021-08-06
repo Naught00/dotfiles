@@ -1,3 +1,4 @@
 #!/bin/bash
 # A simple script which runs the given command as the root user.
+printf "[alto] "
 su -c "$*"
