@@ -1,0 +1,3 @@
+#!/bin/bash
+# A simple script which runs the given command as the root user.
+su -c "$*"
