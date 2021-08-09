@@ -1,6 +1,6 @@
 #!/bin/bash
 # A script that compiles my markdown notes into html and opens in luakit
-# Takes an argument in the form of a "file.md"
+# Takes an argument in the form of "file.md"
 # Can be easily intergrated into vim with the AsyncRun plugin. ":AsyncRun markdown.sh %"
 filename=$1
 name="${filename%.*}"
