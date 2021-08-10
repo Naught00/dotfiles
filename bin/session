@@ -1,0 +1,13 @@
+#!/bin/bash 
+# A script to choose the session type and promptly start up an X server.
+# Takes an argument in the form of a DE/WM. For example, "./session.sh i3"
+case $1 in
+	i3)
+		echo "exec i3" > .xinitrc
+		startx		
+		;;
+	cinnamon)
+		echo "exec cinnamon-session" > .xinitrc
+		startx
+		;;
+esac
