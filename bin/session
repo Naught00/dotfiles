@@ -10,4 +10,9 @@ case $1 in
 		echo "exec cinnamon-session" > .xinitrc
 		startx
 		;;
+	gnome)	echo "export XDG_SESSION_TYPE=x11
+		export GDK_BACKEND=x11
+		exec gnome-session" > .xinitrc
+		startx
+		;;
 esac
