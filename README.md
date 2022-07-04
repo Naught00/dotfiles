@@ -1,5 +1,5 @@
-# Arch dotfiles
-This is my dotfile repository. The script is intended for use under Arch Linux.
+# dotfiles
+This is my dotfile repository. The script is intended for use under Linux.
 
 - Scripts are located in `/bin`
 This repo contains dotfiles for some of the software that I most commonly use:
