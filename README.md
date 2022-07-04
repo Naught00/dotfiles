@@ -10,6 +10,7 @@ This repo contains dotfiles for some of the software that I most commonly use:
   - latexmk
   - bash
   - i3status
+  - alacritty
 ## Installaion
 Clone the dotfiles repository in your directory of choce. This example uses ~/git.
 ```
