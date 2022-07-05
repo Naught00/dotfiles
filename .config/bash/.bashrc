@@ -7,5 +7,6 @@
 
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
-source "$HOME/.cargo/env"
+. "$HOME/.cargo/env"
+alias new='gnome-terminal --working-directory="$PWD"'
 alias thisdir="launch alacritty --working-directory ."
