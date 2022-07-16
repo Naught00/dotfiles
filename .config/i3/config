@@ -14,7 +14,6 @@ for_window [class=".*"] border pixel 2
 
 
 # Add gaps
-
 gaps inner 10
 
 # Open Steam on workspace 1
@@ -23,8 +22,11 @@ assign [class="Steam"] 1
 # Open Discord on workspace 2
 assign [class="discord"] 2
 
-# Open obs on workspace 4
-assign [class="obs"] 4
+# Open Firefox on workspace 3
+assign [class="firefox"] 3
+
+# Open obs on workspace 6
+assign [class="obs"] 6
 
 # Make origin a floating window
 for_window [instance="origin.exe"] floating enable
