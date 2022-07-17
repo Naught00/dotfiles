@@ -1,9 +1,9 @@
 filetype plugin indent on
-nnoremap <Leader>re :Rexplore <CR>
+nnoremap <Leader>re :Rexplore <CR> 
 syntax on
 set number
 set tabstop=4
-let g:netrw_banner=0        " disable annoying banner
+let g:netrw_banner=0 
 set background=dark
 set path=.,**
 nnoremap <leader>l :ls<CR>:b <space>
