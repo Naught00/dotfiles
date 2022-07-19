@@ -207,4 +207,3 @@ exec --no-startup-id setxkbmap ie
 exec --no-startup-id firefox
 exec --no-startup-id i3-msg 'workspace 1; exec dbus-launch gnome-terminal; workspace 1'
 exec --no-startup-id urgency_wait.sh
-exec --no-startup-id workrave
