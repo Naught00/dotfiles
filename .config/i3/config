@@ -205,6 +205,6 @@ exec --no-startup-id redshift -l 53:-7 -t 6500:2500
 exec --no-startup-id obs --startreplaybuffer
 exec --no-startup-id setxkbmap ie
 exec --no-startup-id firefox
-exec --no-startup-id i3-msg 'workspace 2; exec dbus-launch gnome-terminal; workspace 1'
+exec --no-startup-id i3-msg 'workspace 1; exec dbus-launch gnome-terminal; workspace 1'
 exec --no-startup-id urgency_wait.sh
-
+exec --no-startup-id workrave

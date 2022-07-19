@@ -7,6 +7,7 @@ let g:netrw_banner=0
 set background=dark
 set path=.,**
 nnoremap <leader>l :ls<CR>:b <space>
+inoremap <expr> <TAB> pumvisible() ? "<C-n>" : "<TAB>"
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>vd <cmd>lua vim.lsp.buf.definition()<CR>
 nnoremap <leader>vh <cmd>lua vim.lsp.buf.hover()<CR>
