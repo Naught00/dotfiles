@@ -4,5 +4,6 @@ shopt -s extglob
 cp -r ~/.config/nvim/!(pack) ~/git/dotfiles/.config/nvim/
 cp ~/.bashrc ~/git/dotfiles/.config/bash/.bashrc
 cd ~/git/dotfiles/
+git pull
 git commit -a
 git push
