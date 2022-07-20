@@ -1,2 +1,2 @@
 #!/bin/bash
-vim ~/.config/i3/config
+nvim ~/.config/i3/config
