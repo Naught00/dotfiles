@@ -49,7 +49,7 @@ for_window [instance="origin.exe"] floating enable
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id dbus-launch gnome-terminal
+bindsym $mod+Return exec --no-startup-id uxterm -fa 'Source Code Pro' -fs 16 -bd black -r
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -204,5 +204,5 @@ exec --no-startup-id redshift -l 53:-7 -t 6500:2500
 exec --no-startup-id obs --startreplaybuffer
 exec --no-startup-id setxkbmap ie
 exec --no-startup-id firefox
-exec --no-startup-id i3-msg 'workspace 1; exec dbus-launch gnome-terminal; workspace 1'
-exec --no-startup-id urgency_wait.sh
+exec --no-startup-id i3-msg 'workspace 1;'
+exec --no-startup-id urgency_wait.s
