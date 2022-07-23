@@ -60,7 +60,8 @@ bindsym $mod+Shift+s exec --no-startup-id maim -s -o -u | xclip -selection clipb
 bindsym $mod+Shift+u exec --no-startup-id maim ~/Pictures/$(date +"%FT%T").png
 
 # start rofi (a program launcher)
-bindsym $mod+d exec --no-startup-id "uxterm -fa 'Source Code Pro' -fs 16 -bd black -r -e ~/launcher.sh"
+bindsym $mod+d exec "rofi -show drun run"
+#bindsym $mod+d exec --no-startup-id "uxterm -fa 'Source Code Pro' -fs 16 -bd black -r -e ~/launcher.sh"
 # A more modern rofi replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
