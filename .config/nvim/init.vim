@@ -6,6 +6,7 @@ set tabstop=4
 let g:netrw_banner=0 
 set background=dark
 set path=.,**
+set relativenumber
 nnoremap <leader>l :ls<CR>:b <space>
 inoremap <expr> <TAB> pumvisible() ? "<C-n>" : "<TAB>"
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
