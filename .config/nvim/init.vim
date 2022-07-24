@@ -29,6 +29,7 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'SirVer/ultisnips'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
+
 call plug#end()
 
 lua require'lspconfig'.rust_analyzer.setup({})
