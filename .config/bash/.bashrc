@@ -8,8 +8,7 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 . "$HOME/.cargo/env"
-alias new='gnome-terminal --working-directory="$PWD"'
-alias thisdir="launch alacritty --working-directory ."
+alias new='launch alacritty --working-directory=.'
 alias vim='/usr/bin/nvim'
 export EDITOR=/usr/bin/nvim
 set -o vi
