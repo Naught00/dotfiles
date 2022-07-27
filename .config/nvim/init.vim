@@ -26,6 +26,7 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
+Plug 'jacoborus/tender.vim'
 
 Plug 'SirVer/ultisnips'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
@@ -74,3 +75,4 @@ lua <<EOF
     capabilities = capabilities
   }
 EOF
+colorscheme tender

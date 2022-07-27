@@ -49,7 +49,8 @@ for_window [instance="origin.exe"] floating enable
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id uxterm -fa 'Source Code Pro' -fs 16 -bd black -r
+#bindsym $mod+Return exec --no-startup-id uxterm -fa 'Source Code Pro' -fs 16 -bd black -r -w 0
+bindsym $mod+Return exec --no-startup-id alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill

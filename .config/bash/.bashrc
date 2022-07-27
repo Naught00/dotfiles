@@ -12,6 +12,6 @@ alias new='gnome-terminal --working-directory="$PWD"'
 alias thisdir="launch alacritty --working-directory ."
 alias vim='/usr/bin/nvim'
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
-bind '"\C-a":"cd $(fd . | sk)\n"'
 export EDITOR=/usr/bin/nvim
 set -o vi
+bind '"\C-a":"cd $(fd . | sk)\n"'
