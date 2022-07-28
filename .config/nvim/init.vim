@@ -7,8 +7,8 @@ let g:netrw_banner=0
 set background=dark
 set path=.,**
 set relativenumber
+
 nnoremap <leader>l :ls<CR>:b <space>
-inoremap <expr> <TAB> pumvisible() ? "<C-n>" : "<TAB>"
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>vd <cmd>lua vim.lsp.buf.definition()<CR>
 nnoremap <leader>vh <cmd>lua vim.lsp.buf.hover()<CR>
@@ -35,6 +35,7 @@ Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 call plug#end()
 
 lua require'lspconfig'.rust_analyzer.setup({})
+lua require'lspconfig'.clangd.setup{}
 
 set completeopt=menu,menuone,noselect
 
@@ -72,6 +73,9 @@ lua <<EOF
   local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
   -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
   require('lspconfig')['rust_analyzer'].setup {
+    capabilities = capabilities
+  }
+  require('lspconfig')['clangd'].setup {
     capabilities = capabilities
   }
 EOF
