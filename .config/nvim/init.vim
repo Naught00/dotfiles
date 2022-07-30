@@ -35,7 +35,7 @@ Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 call plug#end()
 
 lua require'lspconfig'.rust_analyzer.setup({})
-lua require'lspconfig'.clangd.setup{}
+lua require'lspconfig'.clangd.setup({})
 
 set completeopt=menu,menuone,noselect
 
