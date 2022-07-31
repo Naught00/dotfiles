@@ -14,3 +14,4 @@ alias vi='/usr/bin/nvim'
 export EDITOR=/usr/bin/nvim
 set -o vi
 bind '"\C-a":"cd $(fd . | sk)\n"'
+alias info='info --vi-keys'
