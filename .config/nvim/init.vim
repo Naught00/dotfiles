@@ -30,7 +30,7 @@ Plug 'jacoborus/tender.vim'
 
 Plug 'SirVer/ultisnips'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
-
+Plug 'skywind3000/asyncrun.vim'
 
 call plug#end()
 

@@ -7,7 +7,6 @@
 
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
-. "$HOME/.cargo/env"
 alias new='launch alacritty --working-directory=.'
 alias vim='/usr/bin/nvim'
 alias vi='/usr/bin/nvim'

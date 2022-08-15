@@ -49,8 +49,8 @@ for_window [instance="origin.exe"] floating enable
 floating_modifier $mod
 
 # start a terminal
-#bindsym $mod+Return exec --no-startup-id uxterm -fa 'Source Code Pro' -fs 16 -bd black -r -w 0
-bindsym $mod+Return exec --no-startup-id alacritty
+bindsym $mod+Return exec --no-startup-id uxterm -fa 'Source Code Pro' -fs 16 -bd black -r -w 0
+#bindsym $mod+Return exec --no-startup-id alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -201,7 +201,7 @@ bar {
 	position bottom
 }
 exec --no-startup-id xrandr --output DP-0 --mode 1920x1080 --rate 144
-exec --no-startup-id feh --bg-scale /home/naught/Pictures/background.png
+exec --no-startup-id feh --bg-scale /usr/share/backgrounds/yaru-colors/Fehmarn-Wallpaper.jpg
 exec --no-startup-id redshift -l 53:-7 -t 6500:2500
 exec --no-startup-id obs --startreplaybuffer
 exec --no-startup-id setxkbmap ie
