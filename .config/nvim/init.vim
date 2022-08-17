@@ -79,4 +79,4 @@ lua <<EOF
     capabilities = capabilities
   }
 EOF
-colorscheme tender
+"colorscheme tender
