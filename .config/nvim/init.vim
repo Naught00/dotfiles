@@ -3,10 +3,12 @@ nnoremap <Leader>re :Rexplore <CR>
 syntax on
 set number
 set tabstop=4
+set shiftwidth=4
 let g:netrw_banner=0 
 set background=dark
 set path=.,**
 set relativenumber
+set expandtab
 
 nnoremap <leader>l :ls<CR>:b <space>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
