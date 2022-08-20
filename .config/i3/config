@@ -202,9 +202,10 @@ bar {
 }
 exec --no-startup-id xrandr --output DP-0 --mode 1920x1080 --rate 144
 exec --no-startup-id feh --bg-scale /usr/share/backgrounds/yaru-colors/Fehmarn-Wallpaper.jpg
-exec --no-startup-id redshift -l 53:-7 -t 6500:2500
+exec --no-startup-id redshift -l 53:-7 -t 6500:2000
 exec --no-startup-id obs --startreplaybuffer
 exec --no-startup-id setxkbmap ie
 exec --no-startup-id firefox
 exec --no-startup-id i3-msg 'workspace 1;'
 exec --no-startup-id urgency_wait.sh
+exec --no-startup-id picom
