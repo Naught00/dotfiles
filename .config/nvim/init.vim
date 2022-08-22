@@ -6,12 +6,13 @@ set number
 set tabstop=4
 set shiftwidth=4
 let g:netrw_banner=0 
-set background=dark
 set path=.,**
 set relativenumber
 set expandtab
 
-nnoremap <leader>l :ls<CR>:b <space>
+nnoremap <leader>l :make<CR>
+nnoremap <leader>r :make run<CR>
+nnoremap <leader>q :copen<CR>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>vd <cmd>lua vim.lsp.buf.definition()<CR>
 nnoremap <leader>vh <cmd>lua vim.lsp.buf.hover()<CR>
