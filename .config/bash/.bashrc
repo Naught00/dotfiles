@@ -17,5 +17,5 @@ set -o vi
 bind '"\C-a":"cd $(fd . | sk)\n"'
 alias info='info --vi-keys'
 source /etc/profile.d/vte.sh
-export PROMPT_COMMAND="pwd > /tmp/whereami"
+export PROMPT_COMMAND=prompt_command.sh
 cd $(cat /tmp/whereami)
