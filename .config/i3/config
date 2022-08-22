@@ -1,5 +1,4 @@
-# Naught's i3 config file (v4)
-# Please see https://github.com/Naught00/dotfiles.git for a complete reference!
+# i3 config file (v4)
 
 set $mod Mod1
 
@@ -9,7 +8,7 @@ font pango:Source Code Pro 13
 
 
 # Remove title bars
-#for_window [class=".*"] border pixel 2
+for_window [class=".*"] border pixel 2
 
 
 # Add gaps
@@ -18,11 +17,11 @@ font pango:Source Code Pro 13
 # Open Steam on workspace 1
 assign [class="Steam"] 1
 
-# Open Discord on workspace 2
-assign [class="discord"] 2
+# Open Discord on workspace 3
+assign [class="discord"] 3
 
-# Open Firefox on workspace 3
-assign [class="firefox"] 3
+# Open Firefox on workspace 2
+assign [class="firefox"] 2
 
 # Open obs on workspace 6
 assign [class="obs"] 6
