@@ -18,6 +18,7 @@ nnoremap <leader>vi <cmd>lua vim.lsp.buf.implementation()<CR>
 nnoremap <leader>vsh <cmd>lua vim.lsp.buf.signature_help()<CR>
 nnoremap <leader>vr <cmd>lua vim.lsp.buf.rename()<CR>
 nnoremap <leader>vgr <cmd>lua vim.lsp.buf.references()<CR>
+nnoremap <leader>va <cmd>lua vim.lsp.buf.code_action()<CR>
 
 call plug#begin()
 Plug 'neovim/nvim-lspconfig'
