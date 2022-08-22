@@ -4,15 +4,15 @@
 case $1 in
 	i3)
 		echo "exec i3" > .xinitrc
-		startx		
+        startx
 		;;
 	cinnamon)
 		echo "exec cinnamon-session" > .xinitrc
 		startx
 		;;
 	gnome)	echo "export XDG_SESSION_TYPE=x11
-		export GDK_BACKEND=x11
-		exec gnome-session" > .xinitrc
-		startx
+export GDK_BACKEND=x11
+exec gnome-session" > .xinitrc
+        startx
 		;;
 esac
