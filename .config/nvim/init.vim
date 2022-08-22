@@ -1,5 +1,6 @@
 filetype plugin indent on
 nnoremap <Leader>re :Rexplore <CR> 
+let mapleader = " "
 syntax on
 set number
 set tabstop=4
