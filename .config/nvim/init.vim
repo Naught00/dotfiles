@@ -10,8 +10,8 @@ set path=.,**
 set relativenumber
 set expandtab
 
-nnoremap <leader>l :make<CR>
-nnoremap <leader>r :make run<CR>
+nnoremap <leader>l :make!<CR>
+nnoremap <leader>r :make! run<CR>
 nnoremap <leader>q :copen<CR>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>vd <cmd>lua vim.lsp.buf.definition()<CR>
