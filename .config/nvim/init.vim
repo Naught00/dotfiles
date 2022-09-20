@@ -11,6 +11,7 @@ set relativenumber
 set expandtab
 
 nnoremap <leader>l :make!<CR>
+nnoremap <leader>t :term build/abre<CR>A
 nnoremap <leader>r :make! run<CR>
 nnoremap <leader>q :copen<CR>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
