@@ -5,7 +5,7 @@ syntax on
 set number
 set tabstop=4
 set shiftwidth=4
-let g:netrw_banner=0 
+let g:netrw_banner=0
 set path=.,**
 set relativenumber
 set expandtab
@@ -32,15 +32,12 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
-Plug 'jacoborus/tender.vim'
 
 Plug 'SirVer/ultisnips'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 Plug 'skywind3000/asyncrun.vim'
 
 call plug#end()
-
-lua require'lspconfig'.rust_analyzer.setup({})
 
 set completeopt=menu,menuone,noselect
 
