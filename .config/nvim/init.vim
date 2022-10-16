@@ -11,6 +11,7 @@ set relativenumber
 set expandtab
 
 nnoremap <leader>l :make!<CR>
+tnoremap <Esc> <C-\><C-n>
 nnoremap <leader>t :term make run<CR>A
 nnoremap <leader>r :make! run<CR>
 nnoremap <leader>q :copen<CR>
@@ -78,6 +79,9 @@ lua <<EOF
     capabilities = capabilities
   }
   require('lspconfig')['clangd'].setup {
+    capabilities = capabilities
+  }
+  require('lspconfig')['pyright'].setup {
     capabilities = capabilities
   }
 EOF
