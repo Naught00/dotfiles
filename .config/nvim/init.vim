@@ -3,12 +3,12 @@ nnoremap <Leader>re :Rexplore <CR>
 let mapleader = " "
 syntax on
 set number
-set tabstop=4
-set shiftwidth=4
+set tabstop=8
+set shiftwidth=8
 let g:netrw_banner=0
 set path=.,**
 set relativenumber
-set expandtab
+"set expandtab
 
 nnoremap <leader>l :make!<CR>
 tnoremap <Esc> <C-\><C-n>
