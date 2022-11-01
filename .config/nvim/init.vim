@@ -12,6 +12,8 @@ set relativenumber
 
 nnoremap <leader>l :make!<CR>
 tnoremap <Esc> <C-\><C-n>
+nnoremap <leader>da :lua require('cmp').setup.buffer { enabled = false }<CR>
+nnoremap <leader>ea :lua require('cmp').setup.buffer { enabled = true }<CR>
 nnoremap <leader>t :term make run<CR>A
 nnoremap <leader>r :make! run<CR>
 nnoremap <leader>q :copen<CR>
@@ -47,6 +49,7 @@ lua <<EOF
   local cmp = require'cmp'
 
   cmp.setup({
+    enabled = false,
     snippet = {
       -- REQUIRED - you must specify a snippet engine
       expand = function(args)
