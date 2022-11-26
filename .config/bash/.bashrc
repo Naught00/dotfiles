@@ -10,7 +10,6 @@ PS1='[\u@\h \W]\$ '
 PS1="[\u] \w> "
 alias new='launch alacritty --working-directory=.'
 alias vim='/usr/bin/nvim'
-alias vi='/usr/bin/nvim'
 export MANWIDTH=80
 export EDITOR=/usr/bin/nvim
 set -o vi
