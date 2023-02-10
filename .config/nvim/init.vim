@@ -1,21 +1,21 @@
 filetype plugin indent on
-nnoremap <Leader>re :Rexplore <CR> 
 let mapleader = " "
 syntax on
 set number
-set tabstop=8
+"set tabstop=8
 set shiftwidth=8
 let g:netrw_banner=0
 set path=.,**
 set relativenumber
-"set expandtab
+"set expandtab this converts tabs into spaces. 
 
-nnoremap <leader>l :make!<CR>
+nnoremap <leader>l :make<CR>
+nnoremap <Leader>re :Rexplore <CR> 
 tnoremap <Esc> <C-\><C-n>
 nnoremap <leader>da :lua require('cmp').setup.buffer { enabled = false }<CR>
 nnoremap <leader>ea :lua require('cmp').setup.buffer { enabled = true }<CR>
 nnoremap <leader>t :term make run<CR>A
-nnoremap <leader>r :make! run<CR>
+nnoremap <leader>r :make run<CR>
 nnoremap <leader>q :copen<CR>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>vd <cmd>lua vim.lsp.buf.definition()<CR>
@@ -33,6 +33,7 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
+Plug 'mfussenegger/nvim-jdtls'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 
