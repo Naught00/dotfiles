@@ -7,7 +7,9 @@ set shiftwidth=8
 let g:netrw_banner=0
 set path=.,**
 set relativenumber
-"set expandtab this converts tabs into spaces. 
+set mouse= "Disable mouse. Don't know why this is on by default.
+
+"set expandtab This converts tabs into spaces.
 
 nnoremap <leader>l :make<CR>
 "nnoremap <Leader>re :Rexplore <CR> 
