@@ -10,7 +10,7 @@ set relativenumber
 "set expandtab this converts tabs into spaces. 
 
 nnoremap <leader>l :make<CR>
-nnoremap <Leader>re :Rexplore <CR> 
+"nnoremap <Leader>re :Rexplore <CR> 
 tnoremap <Esc> <C-\><C-n>
 nnoremap <leader>da :lua require('cmp').setup.buffer { enabled = false }<CR>
 nnoremap <leader>ea :lua require('cmp').setup.buffer { enabled = true }<CR>

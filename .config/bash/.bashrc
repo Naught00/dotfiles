@@ -17,4 +17,4 @@ bind '"\C-a":"cd $(fd . | sk)\n"'
 alias info='info --vi-keys'
 source /etc/profile.d/vte.sh
 PROMPT_COMMAND=prompt_command.sh
-cd $(cat /tmp/whereami)
+cd $(cat ~/.local/state/whereami)
