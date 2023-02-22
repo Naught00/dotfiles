@@ -8,6 +8,7 @@ let g:netrw_banner=0
 set path=.,**
 set relativenumber
 set mouse= "Disable mouse. Don't know why this is on by default.
+inoremap jk <esc>
 
 "set expandtab This converts tabs into spaces.
 
