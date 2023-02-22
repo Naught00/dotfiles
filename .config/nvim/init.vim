@@ -1,4 +1,5 @@
 filetype plugin indent on
+source ~/.config/nvim/term.vim
 let mapleader = " "
 syntax on
 set number
@@ -18,6 +19,7 @@ tnoremap <C-w> <C-\><C-n><C-w>
 nnoremap <leader>da :lua require('cmp').setup.buffer { enabled = false }<CR>
 nnoremap <leader>ea :lua require('cmp').setup.buffer { enabled = true }<CR>
 nnoremap <leader>t :term make run<CR>A
+nnoremap <leader>j :bp<CR>
 nnoremap <leader>r :make run<CR>
 nnoremap <leader>q :copen<CR>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
