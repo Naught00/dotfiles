@@ -14,7 +14,7 @@ inoremap jk <esc>
 
 nnoremap <leader>l :make<CR>
 "nnoremap <Leader>re :Rexplore <CR> 
-tnoremap <Esc> <C-\><C-n>
+tnoremap <C-w> <C-\><C-n><C-w>
 nnoremap <leader>da :lua require('cmp').setup.buffer { enabled = false }<CR>
 nnoremap <leader>ea :lua require('cmp').setup.buffer { enabled = true }<CR>
 nnoremap <leader>t :term make run<CR>A
