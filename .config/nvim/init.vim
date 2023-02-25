@@ -1,5 +1,6 @@
 filetype plugin indent on
 source ~/.config/nvim/term.vim
+nnoremap <Leader>re :Rexplore <CR> 
 let mapleader = " "
 syntax on
 set number
@@ -14,7 +15,6 @@ inoremap jk <esc>
 "set expandtab This converts tabs into spaces.
 
 nnoremap <leader>l :make<CR>
-"nnoremap <Leader>re :Rexplore <CR> 
 tnoremap <C-w> <C-\><C-n><C-w>
 nnoremap <leader>da :lua require('cmp').setup.buffer { enabled = false }<CR>
 nnoremap <leader>ea :lua require('cmp').setup.buffer { enabled = true }<CR>
@@ -23,13 +23,14 @@ nnoremap <leader>j :bp<CR>
 nnoremap <leader>r :make run<CR>
 nnoremap <leader>q :copen<CR>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>vd <cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap <leader>lg <cmd>Telescope live_grep<cr>
+nnoremap <leader>jd <cmd>lua vim.lsp.buf.definition()<CR>
 nnoremap <leader>vh <cmd>lua vim.lsp.buf.hover()<CR>
 nnoremap <leader>vi <cmd>lua vim.lsp.buf.implementation()<CR>
 nnoremap <leader>vsh <cmd>lua vim.lsp.buf.signature_help()<CR>
 nnoremap <leader>vr <cmd>lua vim.lsp.buf.rename()<CR>
-nnoremap <leader>vgr <cmd>lua vim.lsp.buf.references()<CR>
-nnoremap <leader>vca <cmd>lua vim.lsp.buf.code_action()<CR>
+nnoremap <leader>gr <cmd>lua vim.lsp.buf.references()<CR>
+nnoremap <leader>ca <cmd>lua vim.lsp.buf.code_action()<CR>
 
 call plug#begin()
 Plug 'neovim/nvim-lspconfig'
@@ -91,6 +92,9 @@ lua <<EOF
     capabilities = capabilities
   }
   require('lspconfig')['pyright'].setup {
+    capabilities = capabilities
+  }
+  require('lspconfig')['gopls'].setup {
     capabilities = capabilities
   }
 EOF
