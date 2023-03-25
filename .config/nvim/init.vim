@@ -1,5 +1,5 @@
 filetype plugin indent on
-source ~/.config/nvim/term.vim
+"source ~/.config/nvim/term.vim
 nnoremap <Leader>re :Rexplore <CR> 
 let mapleader = " "
 syntax on
@@ -18,7 +18,7 @@ nnoremap <leader>l :make<CR>
 tnoremap <C-w> <C-\><C-n><C-w>
 nnoremap <leader>da :lua require('cmp').setup.buffer { enabled = false }<CR>
 nnoremap <leader>ea :lua require('cmp').setup.buffer { enabled = true }<CR>
-nnoremap <leader>t :term make run<CR>A
+nnoremap <leader>t :term make run<CR>
 nnoremap <leader>j :bp<CR>
 nnoremap <leader>r :make run<CR>
 nnoremap <leader>q :copen<CR>
@@ -95,6 +95,9 @@ lua <<EOF
     capabilities = capabilities
   }
   require('lspconfig')['gopls'].setup {
+    capabilities = capabilities
+  }
+  require('lspconfig')['emmet_ls'].setup {
     capabilities = capabilities
   }
 EOF
