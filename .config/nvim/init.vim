@@ -18,7 +18,7 @@ nnoremap <leader>l :make<CR>
 tnoremap <C-w> <C-\><C-n><C-w>
 nnoremap <leader>da :lua require('cmp').setup.buffer { enabled = false }<CR>
 nnoremap <leader>ea :lua require('cmp').setup.buffer { enabled = true }<CR>
-nnoremap <leader>t :term make run<CR>
+nnoremap <leader>t :tabnew<CR>:term make run<CR>A<CR>
 nnoremap <leader>j :bp<CR>
 nnoremap <leader>r :make run<CR>
 nnoremap <leader>q :copen<CR>
@@ -44,6 +44,7 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 
 Plug 'SirVer/ultisnips'
+Plug 'Tetralux/odin.vim'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 Plug 'skywind3000/asyncrun.vim'
 
@@ -95,9 +96,6 @@ lua <<EOF
     capabilities = capabilities
   }
   require('lspconfig')['gopls'].setup {
-    capabilities = capabilities
-  }
-  require('lspconfig')['emmet_ls'].setup {
     capabilities = capabilities
   }
 EOF
