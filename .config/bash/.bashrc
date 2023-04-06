@@ -21,4 +21,5 @@ source /etc/profile.d/vte.sh
 PROMPT_COMMAND=prompt_command.sh
 cd $(cat ~/.local/state/whereami)
 PATH="$HOME/.local/bin:$PATH"
-PATH="$HOME/git/Odin:$PATH"
+#PATH="$HOME/git/Odin:$PATH"
+export ODIN_ROOT=~/.local/include/odin

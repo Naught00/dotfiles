@@ -3,6 +3,7 @@ filetype plugin indent on
 nnoremap <Leader>re :Rexplore <CR> 
 let mapleader = " "
 syntax on
+set scl=number " move the sign column
 set number
 "set tabstop=8
 set shiftwidth=8
@@ -10,7 +11,7 @@ let g:netrw_banner=0
 set path=.,**
 set relativenumber
 set mouse= "Disable mouse. Don't know why this is on by default.
-inoremap jk <esc>
+inoremap df <esc>
 
 "set expandtab This converts tabs into spaces.
 
