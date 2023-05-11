@@ -1,0 +1,25 @@
+xterm*background: #FFFFDD
+xterm*foreground: black
+xterm*faceName: Source Code Pro
+xterm*faceSize: 14
+
+XTerm*vt100.translations: #override \
+    Shift Ctrl <Key> C: copy-selection(CLIPBOARD) \n\
+    Shift Ctrl <Key> V: insert-selection(CLIPBOARD)
+
+xterm*color0: #171421
+xterm*color1: #c01c28
+xterm*color2: #26a269
+xterm*color3: #a2734c
+xterm*color4: #12488b
+xterm*color5: #a347ba
+xterm*color6: #2aa1b3
+xterm*color7: #d0cfcc
+xterm*color8: #5e5c64
+xterm*color9: #f66151
+xterm*color10: #33da7a
+xterm*color11: #e9ad0c
+xterm*color12: #2a7bde
+xterm*color13: #c061cb
+xterm*color14: #33c7de
+xterm*color15: #ffffff
