@@ -50,7 +50,7 @@ floating_modifier $mod
 # start a terminal
 #bindsym $mod+Return exec --no-startup-id uxterm -fa 'Source Code Pro' -fs 16 -bd black -r -w 0
 #bindsym $mod+Return exec --no-startup-id alacritty
-bindsym $mod+Return exec --no-startup-id gnome-terminal
+bindsym $mod+Return exec --no-startup-id xterm
 
 # kill focused window
 bindsym $mod+Shift+q kill

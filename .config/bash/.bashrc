@@ -18,8 +18,8 @@ set -o vi
 bind '"\C-a":"cd $(fd . | sk)\n"'
 alias info='info --vi-keys'
 source /etc/profile.d/vte.sh
-PROMPT_COMMAND=prompt_command.sh
-cd $(cat ~/.local/state/whereami)
+#PROMPT_COMMAND=prompt_command.sh
+#cd $(cat ~/.local/state/whereami)
 PATH="$HOME/.local/bin:$PATH"
-#PATH="$HOME/git/Odin:$PATH"
-export ODIN_ROOT=~/.local/include/odin
+PATH="$HOME/git/Odin:$PATH"
+#export ODIN_ROOT=~/.local/include/odin
