@@ -22,4 +22,4 @@ inoremap <C-k> <C-h>
 "nnoremap <Leader>fe :AsyncRun markdown.sh %<CR>
 "nnoremap <Leader>cl :! cargo run <CR>
 set path=.,**
-set autochdir
+"set autochdir

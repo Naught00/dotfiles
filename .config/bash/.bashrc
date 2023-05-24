@@ -13,7 +13,7 @@ alias new='launch alacritty --working-directory=.'
 #alias vim='/usr/bin/nvim'
 alias v='/usr/bin/vim'
 export MANWIDTH=80
-export EDITOR=/usr/bin/nvim
+export EDITOR=/usr/bin/vim
 set -o vi
 bind '"\C-a":"cd $(fd . | sk)\n"'
 alias info='info --vi-keys'
